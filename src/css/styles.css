@@ -77,7 +77,7 @@ header {
 }
 
 .great-day--message {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 #great-day--button {
@@ -145,7 +145,7 @@ button[type="submit"]{
   border: none;
   color: white;
   padding: 1rem;
-  width: 12rem;
+  width: 10rem;
   cursor: pointer;
 }
 
