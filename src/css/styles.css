@@ -32,11 +32,10 @@ nav {
   padding: 1rem;
   background-color: var(--c-green);
   color: var(--c-white);
-  
-  
 }
 
 nav #logo {
+  width: fit-content;
   font-size: 2rem;
   font-weight: 700;
   color: var(--c-white);
@@ -59,6 +58,11 @@ nav ul li a {
   color: white;
 }
 
+a:focus {
+  border-width: 4px;
+  outline: 3px dashed var(--c-white);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -78,6 +82,7 @@ header {
 
 .great-day--message {
   font-size: 1.125rem;
+  margin-right: 2rem;
 }
 
 #great-day--button {
@@ -138,6 +143,13 @@ input, textarea {
   margin-bottom: 20px;
   margin-inline: auto;
   border: 1.5px solid var(--c-dk-gray);
+}
+
+input:focus, 
+textarea:focus,
+button:focus {
+  border-width: 4px;
+  outline: 3px dashed var(--c-dk-gray);
 }
 
 button[type="submit"]{
