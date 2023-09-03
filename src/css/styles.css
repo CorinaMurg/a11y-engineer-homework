@@ -127,6 +127,12 @@ form {
   margin-bottom: 2rem;
 }
 
+.validation-message {
+  display: block;
+  padding-top: 0.4em;
+  color: var(--c-red);
+}
+
 .error-message {
   color: var(--c-red);
   font-weight: 700;
