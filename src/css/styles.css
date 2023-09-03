@@ -127,20 +127,28 @@ form {
   margin-bottom: 2rem;
 }
 
+.error-message {
+  color: var(--c-red);
+  font-weight: 700;
+  display: none;
+}
+
 label {
   display: block;
   margin-bottom: 5px;
+  margin-top: 20px;
   font-weight: bold;
 }
 
 .required {
   color: var(--c-red);
+  font-weight: 400;
 }
 
 input, textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   margin-inline: auto;
   border: 1.5px solid var(--c-dk-gray);
 }
@@ -155,9 +163,11 @@ button:focus {
 button[type="submit"]{
   background-color: var(--c-green);
   border: none;
+  font-size: 1rem;
   color: white;
   padding: 1rem;
   width: 10rem;
+  margin-block: 3rem;
   cursor: pointer;
 }
 
