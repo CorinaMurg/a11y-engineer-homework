@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -29,13 +29,13 @@
       </ul>
     </nav>
 
-    <!-- Header with a closeable message -->
+    <!-- Header -->
     <header>
-      <div class="great-day">
+      <div class="great-day" id="great-day">
         <p class="great-day--message">Make sure you remember to have a great day!</p>
-        <button class="great-day--button" aria-label="Close message">X</button>
+        <button id="great-day--button" aria-label="Close message"><i class="fa fa-times" aria-hidden="true"></i></button>
       </div>
-      
+
       <section class="hero">
         <img src="images/image.png" class="hero--image" alt="Green envelope and test tube containing a swab">
         <div class="hero--text">
@@ -66,7 +66,7 @@
     </main>
 
     <!-- JS -->
-    <script src="./src/js/script.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

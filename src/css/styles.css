@@ -7,28 +7,17 @@
   --c-dk-gray: #212121;
 }
 
-
-/* Spacing values
-6px
-12px
-24px
-48px
-
-Font size
-Headings: 38px
-Copy: 16px
-
-Line height
-Headings: 40px
-Copy: 24px */
-
 /* Reset some default styles */
-html, body, h1, div, p, ul, li, label, input, textarea, button {
+
+* {
+  box-sizing: border-box;
+}
+
+body, h1, div, p, ul, li, label, input, textarea, button {
   margin: 0;
   padding: 0;
 }
 
-/* Apply a background color to the whole page */
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -37,18 +26,23 @@ body {
 
 /* Style the navbar */
 nav {
-  background-color: var(--c-green);
-  color: var(--c-white);
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 1rem;
+  background-color: var(--c-green);
+  color: var(--c-white);
+  
+  
 }
 
 nav #logo {
-  font-size: 24px;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--c-white);
   text-decoration: none;
+  letter-spacing: 1.1px;
+  margin-bottom: 1rem;
 }
 
 nav ul {
@@ -57,42 +51,42 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 
 nav ul li a {
+  font-size: 0.9rem;
   color: white;
 }
 
 header {
-  padding-inline: 1rem;
   display: flex;
   flex-direction: column;
+  padding-inline: 1rem;
+  
 }
 
-/* Style the closeable message */
+/* Div with closeable message */
 .great-day {
-  background-color: var(--c-yellow);
-  padding: 1rem;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:first baseline;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--c-yellow);
 }
 
 .great-day--message {
   font-size: 1rem;
-  /* letter-spacing: 6px; */
 }
 
-.great-day--button {
+#great-day--button {
   background: none;
   border: none;
-  font-size: 18px;
   cursor: pointer;
 }
 
-/* Style the header */
+/* Header */
 .hero--image {
   max-width: 100%;
   margin-inline: auto;
@@ -100,19 +94,32 @@ header {
 
 .hero--text--heading{
   font-size: 2.375rem;
+  font-weight: 400;
   line-height: 40px;
+  color: var(--c-green);
+  margin-block: 1rem;
+  text-decoration: underline;
 }
 
+.hero--text-paragraph {
+  font-size: 1.125rem;
+  line-height: 24px;
+  margin-block: 1rem;
+}
+
+/* Main section */
 main {
   width: 100%;
-  margin: 1rem;
+  padding-inline: 1rem;
 }
 
-/* Style the form */
+/* Form */
 form {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 label {
@@ -133,8 +140,8 @@ input, textarea {
   border: 1.5px solid var(--c-dk-gray);
 }
 
-button {
-  background-color: #3498db;
+button[type="submit"]{
+  background-color: var(--c-green);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -142,6 +149,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button[type="submit"]:hover {
   background-color: #2980b9;
 }
