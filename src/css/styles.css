@@ -1,0 +1,147 @@
+/* Add your solution here, update variables as you see fit */
+:root {
+  --c-white: #ffffff;
+  --c-yellow: #ffecb5;
+  --c-green: #0e7757;
+  --c-red: #cc0000;
+  --c-dk-gray: #212121;
+}
+
+
+/* Spacing values
+6px
+12px
+24px
+48px
+
+Font size
+Headings: 38px
+Copy: 16px
+
+Line height
+Headings: 40px
+Copy: 24px */
+
+/* Reset some default styles */
+html, body, h1, div, p, ul, li, label, input, textarea, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the whole page */
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  line-height: 24px;
+}
+
+/* Style the navbar */
+nav {
+  background-color: var(--c-green);
+  color: var(--c-white);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+nav #logo {
+  font-size: 24px;
+  color: var(--c-white);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+}
+
+header {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the closeable message */
+.great-day {
+  background-color: var(--c-yellow);
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.great-day--message {
+  font-size: 1rem;
+  /* letter-spacing: 6px; */
+}
+
+.great-day--button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Style the header */
+.hero--image {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.hero--text--heading{
+  font-size: 2.375rem;
+  line-height: 40px;
+}
+
+main {
+  width: 100%;
+  margin: 1rem;
+}
+
+/* Style the form */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.required {
+  color: var(--c-red);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-inline: auto;
+  border: 1.5px solid var(--c-dk-gray);
+}
+
+button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  width: 50%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}

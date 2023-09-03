@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Accessibility Engineer Homework</title>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Accessibility Engineer Homework" />
+
+    <!-- Font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav>
+      <a href="https://adhocteam.us/" id="logo">Ad Hoc</a>
+      <ul>
+        <li><a href="https://adhocteam.us/about/">About</a></li>
+        <li><a href="https://adhocteam.us/contact/">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header with a closeable message -->
+    <header>
+      <div class="great-day">
+        <p class="great-day--message">Make sure you remember to have a great day!</p>
+        <button class="great-day--button" aria-label="Close message">X</button>
+      </div>
+      
+      <section class="hero">
+        <img src="images/image.png" class="hero--image" alt="Green envelope and test tube containing a swab">
+        <div class="hero--text">
+          <h1 class="hero--text--heading">Examining the covidtests.gov architecture</h1>
+          <p class="hero--text-paragraph">A day early, the Biden administration has quietly launched
+            the new website that allows households to order four COVID-19 rapid antigen tests.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+   
+      <!-- Form -->
+      <form action="return false;" method="post">
+        <label for="full-name">Full Name <span class="required">(required)</span></label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="email">Email <span class="required">(required)</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message <span class="required">(required)</span></label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- JS -->
+    <script src="./src/js/script.js"></script>
+
+  </body>
+</html>
