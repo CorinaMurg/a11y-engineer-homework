@@ -37,13 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('missing-email').style.display = 'block';
         errors++;
         errorMessages.push('Email is required.');
-        firstErrorField = firstErrorField || 'email';
-    } else if (!email.includes('@')) {
-        document.getElementById('missing-@').style.display = 'block';
-        errors++;
-        errorMessages.push("Email must include '@'.");
         // firstErrorField = firstErrorField || 'email';
-    }
+    } 
+    // else if (!email.includes('@')) {
+    //     document.getElementById('missing-@').style.display = 'block';
+    //     errors++;
+    //     errorMessages.push("Email must include the at symbol.");
+    //     // firstErrorField = firstErrorField || 'email';
+    // }
 
     // Validate Message
     const message = document.getElementById('message').value.trim();
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const errorNoun = errors === 1 ? 'error' : 'errors';
-    const errorVerb = errors === 1 ? 'is one' : 'are';
+    const errorVerb = errors === 1 ? 'is' : 'are';
     if (errors > 0) {
       formError.textContent = `There ${errorVerb} ${errors} ${errorNoun} in your submission. ${errorMessages.join(" ")}`;
       // document.getElementById(firstErrorField).focus();

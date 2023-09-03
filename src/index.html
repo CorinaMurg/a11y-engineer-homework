@@ -52,20 +52,20 @@
    
       <!-- Form -->
       <form action="return false;" method="post">
-        <!-- aria-live region for general error messages -->
+        <!-- aria-live region for after-submission error messages -->
         <div id="form-error" aria-live="assertive"></div>
     
         <label for="full-name">Full Name <span class="required">(required)</span></label>
-        <input type="text" id="full-name" name="full-name" aria-describedby="full-name-error">
+        <input type="text" id="full-name" name="full-name">
         <p class="error-message" id="full-name-error">Error: This field is required.</p>
     
         <label for="email">Email <span class="required">(required)</span></label>
-        <input type="text" id="email" name="email" aria-describedby="missing-email missing-@">
+        <input type="email" id="email" name="email">
         <p class="error-message" id="missing-email">Error: This field is required.</p>
-        <p class="error-message" id="missing-@">Please include the '@' symbol in your email address.</p>
+        <!-- <p class="error-message" id="missing-@">Please include the '@' symbol in your email address.</p> -->
     
         <label for="message">Message <span class="required">(required)</span></label>
-        <textarea id="message" name="message" aria-describedby="message-error"></textarea>
+        <textarea id="message" name="message"></textarea>
         <p class="error-message" id="message-error">Error: This field is required.</p>
     
         <button type="submit">Submit</button>
