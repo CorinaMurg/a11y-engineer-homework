@@ -54,16 +54,16 @@
       <form action="return false;" method="post">
         <label for="full-name">Full Name <span class="required">(required)</span></label>
         <input type="text" id="full-name" name="full-name">
-        <p class="error-message" id="full-name-error">Error: This field is required.</p>
+        <p class="error-message" id="full-name-error" aria-live="polite">Error: This field is required.</p>
 
         <label for="email">Email <span class="required">(required)</span></label>
-        <input type="email" id="email" name="email">
-        <p class="error-message" id="missing-email">Error: This field is required.</p>
-        <p class="error-message" id="missing-@">Please include an '@' in the email address.</p>
+        <input type="text" id="email" name="email">
+        <p class="error-message" id="missing-email" aria-live="polite">Error: This field is required.</p>
+        <p class="error-message" id="missing-@" aria-live="polite">Please include an '@' in the email address.</p>
 
         <label for="message">Message <span class="required">(required)</span></label>
         <textarea id="message" name="message"></textarea>
-        <p class="error-message" id="message-error">Error: This field is required.</p>
+        <p class="error-message" id="message-error" aria-live="polite">Error: This field is required.</p>
 
         <button type="submit">Submit</button>
       </form>
