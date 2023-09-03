@@ -20,7 +20,7 @@
 
   <body>
 
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav>
       <a href="https://adhocteam.us/" target="_blank" id="logo">Ad Hoc</a>
       <ul>
@@ -29,11 +29,11 @@
       </ul>
     </nav>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
       <div class="great-day" id="great-day">
         <p class="great-day--message">Make sure you remember to have a great day!</p>
-        <button id="great-day--button" aria-label="Close message"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <button id="great-day--button" aria-label="Close have a great day message"><i class="fa fa-times" aria-hidden="true"></i></button>
       </div>
 
       <section class="hero">
@@ -47,21 +47,22 @@
       </section>
     </header>
 
-    <!-- Main Content -->
+    <!-- MAIN -->
     <main>
    
-      <!-- Form -->
+      <!-- FORM -->
       <form action="return false;" method="post">
         <!-- aria-live region for after-submission error messages -->
-        <div id="form-error" aria-live="assertive"></div>
+        <div id="form-error" aria-live="assertive" class="visually-hidden"></div>
     
         <label for="full-name">Full Name <span class="required">(required)</span></label>
-        <input type="text" id="full-name" name="full-name">
+        <input type="text" id="full-name" name="full-name" autocomplete="name">
         <p class="error-message" id="full-name-error">Error: This field is required.</p>
     
         <label for="email">Email <span class="required">(required)</span></label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" autocomplete="email">
         <p class="error-message" id="missing-email">Error: This field is required.</p>
+        <!-- PREVIOUSLY USED WHEN WITH EMAIL VALIDATION -->
         <!-- <p class="error-message" id="missing-@">Please include the '@' symbol in your email address.</p> -->
     
         <label for="message">Message <span class="required">(required)</span></label>
