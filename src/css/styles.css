@@ -91,6 +91,10 @@ header {
   cursor: pointer;
 }
 
+#great-day--button:focus {
+  padding-inline: 0.5rem;
+}
+
 /* Header */
 .hero--image {
   max-width: 100%;
