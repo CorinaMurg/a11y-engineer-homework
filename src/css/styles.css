@@ -1,4 +1,3 @@
-/* Add your solution here, update variables as you see fit */
 :root {
   --c-white: #ffffff;
   --c-yellow: #ffecb5;
@@ -24,7 +23,7 @@ body {
   line-height: 24px;
 }
 
-/* Style the navbar */
+/* NAVBAR */
 nav {
   display: flex;
   flex-direction: column;
@@ -53,7 +52,7 @@ nav ul li {
   margin-right: 1rem;
 }
 
-nav ul li a {
+nav a {
   font-size: 0.9rem;
   color: white;
 }
@@ -63,13 +62,33 @@ nav a:focus {
   outline: 3px dashed var(--c-white);
 }
 
+@media screen and (min-width: 760px) {
+  nav {
+    padding-inline: clamp(1rem, 4vw, 2rem);
+    padding-block: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav #logo {
+    margin-bottom: 0;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+}
+
+
+/* HEADER */
 header {
   display: flex;
   flex-direction: column;
   padding-inline: 1rem;
   
 }
-
 
 /* Div with closeable message */
 .great-day {
@@ -93,10 +112,9 @@ header {
 }
 
 #great-day--button:focus {
-  padding-inline: 0.5rem;
+  padding-inline: 0.1rem;
 }
 
-/* Header */
 .hero--image {
   max-width: 100%;
   margin-inline: auto;
@@ -117,13 +135,38 @@ header {
   margin-block: 1rem;
 }
 
-/* Main section */
+@media screen and (min-width: 760px) {
+  header {
+    padding-inline: clamp(1rem, 10vw, 6rem);
+    padding-top: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .great-day {
+    align-items: center;
+  }
+
+  #great-day--button i {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* MAIN SECTION */
+
 main {
   width: 100%;
   padding-inline: 1rem;
 }
 
-/* Form */
+@media screen and (min-width: 760px) {
+  main {
+    padding-inline: clamp(1rem, 10vw, 6rem);
+    margin: 0 auto;
+  }
+}
+
+/* MAIN - FORM */
 form {
   display: flex;
   flex-direction: column;
@@ -131,23 +174,6 @@ form {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-
-.validation-message {
-  display: block;
-  padding-top: 0.4em;
-  color: var(--c-red);
-}
-
-.error-message {
-  color: var(--c-red);
-  font-weight: 700;
-  display: none;
-}
-
-.error-border {
-  border: 2px solid var(--c-red);
-}
-
 
 label {
   display: block;
@@ -191,6 +217,15 @@ button[type="submit"]:hover {
   background-color: var(--c-dk-gray);
 }
 
+.error-message {
+  color: var(--c-red);
+  font-weight: 700;
+  display: none;
+}
+
+.error-border {
+  border: 2px solid var(--c-red);
+}
 
 .visually-hidden {
   position: absolute;
@@ -204,3 +239,18 @@ button[type="submit"]:hover {
   border: 0;
 }
 
+
+
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 34px 40px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 34px 40px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  nav {
+    max-width: 1441px;
+    margin: 0 auto;
+  } 
+}
