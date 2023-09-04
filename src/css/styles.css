@@ -58,7 +58,7 @@ nav ul li a {
   color: white;
 }
 
-a:focus {
+nav a:focus {
   border-width: 4px;
   outline: 3px dashed var(--c-white);
 }
@@ -69,6 +69,7 @@ header {
   padding-inline: 1rem;
   
 }
+
 
 /* Div with closeable message */
 .great-day {

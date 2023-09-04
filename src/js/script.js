@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   fields.forEach(({ id, errorMsgId }) => removeError(id, errorMsgId));
-  
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
