@@ -1,5 +1,33 @@
 # Accessibility Engineer
 
+## My Implementation (please scroll below for the requirements for this project)
+
+### Questions
+
+1. Does the `autocomplete` attribute on inputs help or hinder accessibility?
+
+2. The UI does not show the alert generated on submission if a field has the `required`` attribute. 
+- Is `required` off, or is the alert just hidden?
+Note: the `required` has the benefit of bringing focus to the first input that has an error, but I was not
+successful at hiding the error tooltip. 😡
+
+3. I bundled all error messages under one `aria-live` element. 
+- Should the focus be directed to the first input that has an error?
+
+4. Should form validation include a check whether the full name field contains two words?
+
+5. For the submit button's `hover` and `focus` states, I used a background color of dark gray.
+- Is this a good alternative to using an `outline` when in focus?
+Note: It was not clear from the UI whether `focus-visible` is preferred to `focus` that is why I used the latter.
+
+6. Would a `skip link` make sense here?
+
+
+
+
+## PROJECT REQUIREMENTS FROM AD HOC
+https://homework.adhoc.team/accessibility_engineer/
+
 ## Instructions & Guidelines
 
 Please build a responsive HTML page from the attached large and small screen designs.
@@ -65,3 +93,7 @@ Feel free to update and change these files as your solution dictates.
 - https://adhocteam.us/
 - https://adhocteam.us/about/
 - https://adhocteam.us/contact/
+
+
+
+
