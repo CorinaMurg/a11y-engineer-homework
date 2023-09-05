@@ -168,6 +168,8 @@ header {
 
   .hero--image {
     max-width: 45%;
+    /* to match the UI */
+    margin-left: -2rem;
   }
 }
 
@@ -186,7 +188,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   main {
     padding-inline: clamp(1rem, 14vw, 12rem);
   }
@@ -273,28 +275,29 @@ button[type="submit"]:focus {
   border: 0;
 }
 
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 600px) {
   .row-inputs {
     display: flex;
     flex-direction: row;
   }
 
   .row-input {
-    width: 20rem;
+    width: 18rem;
     margin-right: 3rem;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   body {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     -webkit-box-shadow: 0px 34px 40px 12px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 34px 40px 12px rgba(0, 0, 0, 0.2);
   }
 
   nav {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
   } 
 }
