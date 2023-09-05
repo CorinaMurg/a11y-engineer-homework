@@ -22,7 +22,14 @@ Note: It was not clear from the UI whether `focus-visible` is preferred to `focu
 
 6. Would a `skip link` make sense here?
 
-
+7. I was confused by this requirement:
+    Spacing values
+    - 6px
+    - 12px
+    - 24px
+    - 48px
+- I assumed they refered to `letter-spacing`, but I was not sure what do do with such large values.
+Note: I added my own `letter-spacing` values.
 
 
 ## PROJECT REQUIREMENTS FROM AD HOC

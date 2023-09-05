@@ -52,16 +52,21 @@
    
       <!-- FORM -->
       <form action="return false;" method="post">
-        <!-- aria-live region for after-submission error messages -->
         <div id="form-error" aria-live="assertive" class="visually-hidden"></div>
-    
-        <label for="full-name">Full Name <span class="required">(required)</span></label>
-        <input type="text" id="full-name" name="full-name" autocomplete="name">
-        <p class="error-message" id="full-name-error">Error: This field is required.</p>
-    
-        <label for="email">Email <span class="required">(required)</span></label>
-        <input type="email" id="email" name="email" autocomplete="email">
-        <p class="error-message" id="missing-email">Error: This field is required.</p>
+        
+        <div class="row-inputs">
+            <div class="row-input">
+                <label for="full-name">Full Name <span class="required">(required)</span></label>
+                <input type="text" id="full-name" name="full-name" autocomplete="name">
+                <p class="error-message" id="full-name-error">Error: This field is required.</p>
+            </div>
+            
+            <div class="row-input">
+                <label for="email">Email <span class="required">(required)</span></label>
+                <input type="email" id="email" name="email" autocomplete="email">
+                <p class="error-message" id="missing-email">Error: This field is required.</p>
+            </div>
+        </div>
     
         <label for="message">Message <span class="required">(required)</span></label>
         <textarea id="message" name="message"></textarea>
@@ -69,6 +74,7 @@
     
         <button type="submit">Submit</button>
     </form>
+    
     
     </main>
 
