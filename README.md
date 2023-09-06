@@ -2,7 +2,7 @@
 
 ## My Implementation (please scroll below for the requirements for this project)
 
-### Questions
+### Questions/Comments
 
 1. Does the `autocomplete` attribute on inputs help or hinder accessibility?
 
@@ -18,9 +18,7 @@ successful at hiding the error tooltip. 😡
 
 5. Should form validation include checking whether the full name field contains two words?
 
-6. For the submit button's `hover` and `focus` states, I used a background color of dark gray.
-- Is this a good alternative to using an `outline` when in focus?
-Note: It was not clear from the UI whether `focus-visible` is preferred to `focus` so I used the latter.
+6. For in-focus states, it was not clear from the UI snapshot whether `focus-visible` is preferred to `focus` so I used the latter.
 
 7. Would a `skip link` make sense here?
 

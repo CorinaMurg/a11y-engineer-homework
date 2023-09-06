@@ -58,7 +58,7 @@ nav a {
 }
 
 nav a:focus {
-  outline: 1.5px solid var(--c-white);
+  outline: 3px dashed var(--c-white);
 }
 
 @media screen and (min-width: 760px) {
@@ -112,7 +112,7 @@ header {
 
 #great-day--button:focus {
   padding-inline: 0.1rem;
-  outline: 1.5px solid var(--c-dk-gray);
+  outline: 3px dashed var(--c-dk-gray);
 }
 
 .hero {
@@ -168,7 +168,7 @@ header {
 
   .hero--image {
     max-width: 45%;
-    /* to match the UI */
+    /* kind of a dirty trick to match the UI */
     margin-left: -2rem;
   }
 }
@@ -225,8 +225,8 @@ input, textarea {
 
 input:focus,
 textarea:focus {
-  border: none;
-  outline: 1.5px solid var(--c-red);
+  border: 1.5px solid var(--c-dk-gray);
+  outline: 3px dashed var(--c-dk-gray);
 }
 
 textarea {
@@ -249,8 +249,7 @@ button[type="submit"]:hover {
 }
 
 button[type="submit"]:focus {
-  background-color: var(--c-dk-gray);
-  outline: none;
+  outline: 3px dashed var(--c-dk-gray);
 }
 
 .error-message {
@@ -260,7 +259,7 @@ button[type="submit"]:focus {
 }
 
 .error-border {
-  border: 2px solid var(--c-red);
+  border: 1.5px solid var(--c-red);
 }
 
 .visually-hidden {
