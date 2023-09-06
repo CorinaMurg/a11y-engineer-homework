@@ -6,30 +6,34 @@
 
 1. Does the `autocomplete` attribute on inputs help or hinder accessibility?
 
-2. The UI does not show the alert generated on submission if a field has the `required`` attribute. 
+2. The UI snapshot does not show the alert generated on submission if a field has the `required` attribute. 
 - Is `required` off, or is the alert just hidden?
 Note: the `required` has the benefit of bringing focus to the first input that has an error, but I was not
 successful at hiding the error tooltip. 😡
 
-3. I bundled all error messages under one `aria-live` element. 
+3. Same question as above for input type `email`. No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (ie missing @), but the UI for the feedback involves the alert tooltip.
+
+4. I bundled all error messages under one `aria-live` element. 
 - Should the focus be directed to the first input that has an error?
 
-4. Should form validation include a check whether the full name field contains two words?
+5. Should form validation include checking whether the full name field contains two words?
 
-5. For the submit button's `hover` and `focus` states, I used a background color of dark gray.
+6. For the submit button's `hover` and `focus` states, I used a background color of dark gray.
 - Is this a good alternative to using an `outline` when in focus?
-Note: It was not clear from the UI whether `focus-visible` is preferred to `focus` that is why I used the latter.
+Note: It was not clear from the UI whether `focus-visible` is preferred to `focus` so I used the latter.
 
-6. Would a `skip link` make sense here?
+7. Would a `skip link` make sense here?
 
-7. I was confused by this requirement:
+8. I was confused by this requirement:
     Spacing values
     - 6px
     - 12px
     - 24px
     - 48px
-- I assumed they refered to `letter-spacing`, but I was not sure what do do with such large values.
+- I assumed they refered to `letter-spacing`, but I was not how to use such large values.
 Note: I added my own `letter-spacing` values.
+
+
 
 
 ## PROJECT REQUIREMENTS FROM AD HOC
