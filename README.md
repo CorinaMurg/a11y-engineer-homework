@@ -11,7 +11,7 @@
 Note: the `required` has the benefit of bringing focus to the first input that has an error, but I was not
 successful at hiding the error tooltip. 😡
 
-3. Same question as above for input type `email`. No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (ie missing @), but the UI for the feedback involves the alert tooltip.
+3. Same question as above for input type `email`. No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (when @ is missing), so I did not use JS to add an error message. 
 
 4. I bundled all error messages under one `aria-live` element. 
 - Should the focus be directed to the first input that has an error?
