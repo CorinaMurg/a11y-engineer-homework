@@ -4,6 +4,7 @@ document.getElementById('great-day--button').addEventListener('click', function(
     document.getElementById('great-day').style.display = 'none';
 }); 
 
+
 // FORM VALIDATION
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
