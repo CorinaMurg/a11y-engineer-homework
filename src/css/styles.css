@@ -23,7 +23,27 @@ body {
   line-height: 1.5rem;
 }
 
+
 /* NAVBAR */
+.skip-to-content {
+  position: absolute;
+  left: 10rem;
+  z-index: 9999;
+  background-color: var(--c-dk-gray);
+  color: var(--c-white); 
+  font-weight: 600;
+  padding: .5em 1em;
+  margin-inline: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 250ms ease-in;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0%);
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -135,7 +155,7 @@ header {
   text-decoration: underline;
 }
 
-.hero--text-paragraph {
+.hero--text--paragraph {
   font-size: 1.125rem;
   letter-spacing: 1.1px;
   margin-block: 1rem;
