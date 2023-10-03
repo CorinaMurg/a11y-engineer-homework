@@ -1,37 +1,30 @@
-# Accessibility Engineer
+# Accessibility Engineer Homework
 
-## My Implementation (please scroll below for the requirements for this project)
+I created this project based on a set of designs and quidelines created by [AdHoc](https://homework.adhoc.team/):
 
-### Questions/Comments
+✅ Goal: Achieve 100 in a Google Lighthouse accessibility scan.
+<br>✅ Scope: Modern browsers only, with no need for legacy support, UI or JS libraries, frameworks, or mixin libraries.
+<br>✅ Specifications: The form doesn’t need to submit; no animations or task runners are required. 
 
-1. Does the `autocomplete` attribute on inputs help or hinder accessibility?
+For a detailed overview and access to the starter files, visit the [Accessibility Engineer Assignment](https://homework.adhoc.team/accessibility_engineer/) on AdHoc’s official website.
 
-2. The UI snapshot does not show the alert generated on submission if a field has the `required` attribute. 
-- Is `required` off, or is the alert just hidden?
-Note: the `required` has the benefit of bringing focus to the first input that has an error, but I was not
-successful at hiding the error tooltip. 😡
+**Why I Love This Project!**
 
-3. Same question as above for input type `email`. No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (when @ is missing), so I did not use JS to add an error message. 
+I believe in a web where everyone has a place. I welcome every challenge that allows me to improve my knowledge of accessibility features. This project has been an opportunity to test my skills and it has put me in a position to research and reach out to accessibility experts on best practices.
 
-4. I bundled all error messages under one `aria-live` element. 
-- Should the focus be directed to the first input that has an error?
+### My Implementation (please scroll below for the requirements for this project)
 
-5. Should form validation include checking whether the full name field contains two words?
+**Semantic HTML**: I used tags like `nav`, `header`, `main`, and `form` to help assistive technologies understand the structure of the page, enhancing the user experience for those relying on screen readers or other aids.
 
-6. For in-focus states, it was not clear from the UI snapshot whether `focus-visible` is preferred to `focus` so I used the latter.
+**ARIA Attributes**: I used several ARIA attributes (like aria-live, aria-label, and aria-hidden) to make the page more understandable to assistive tools.
 
-7. Would a `skip link` make sense here?
+**Skip to Content**: This feature was not part of the provided design. I felt it's important to include it because it enhances keyboard navigation by allowing users to skip repetitive sections and dive straight into the main content.
 
-8. I was confused by this requirement:
-    Spacing values
-    - 6px
-    - 12px
-    - 24px
-    - 48px
-- I assumed they refered to `letter-spacing`, but I was not how to use such large values.
-Note: I added my own `letter-spacing` values.
+**Focus Styles**: Elements like links and buttons have clear focus styles, which are essential for keyboard-only users.
 
+**Error Handling in Form**: The form has clear error messages, with live regions ensuring that assistive technologies pick up error messages as they appear.
 
+**Responsive Design**: I used a mobile-first approach, with media queries optimizing the layout for larger screens. 
 
 
 ## PROJECT REQUIREMENTS FROM AD HOC
