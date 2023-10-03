@@ -9,6 +9,7 @@ I created this project based on a set of designs and quidelines created by [AdHo
 
 For a detailed overview and access to the starter files, visit the [Accessibility Engineer Assignment](https://homework.adhoc.team/accessibility_engineer/) on AdHoc’s official website.
 
+Live site of [my Accessibility Engineer page](https://a11y-engineer.netlify.app/).
 
 ## Why I Love This Project!
 I believe in a web where everyone has a place. I welcome every challenge that allows me to improve my knowledge of accessibility features. This project has been an opportunity to test my skills and it has put me in a position to research and reach out to accessibility experts on best practices.
