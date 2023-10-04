@@ -188,8 +188,6 @@ header {
 
   .hero--image {
     max-width: 45%;
-    /* kind of a dirty trick to match the UI */
-    margin-left: -2rem;
   }
 }
 
@@ -238,7 +236,6 @@ label {
 input, textarea {
   width: 100%;
   padding: 1rem;
-  /* margin-bottom: 20px; */
   margin-inline: auto;
   border: 1.5px solid var(--c-dk-gray);
 }
