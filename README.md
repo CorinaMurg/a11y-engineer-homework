@@ -1,108 +1,43 @@
-# Accessibility Engineer
 
-## My Implementation (please scroll below for the requirements for this project)
+# Accessibility Engineer Homework
 
-### Questions/Comments
+I created this project based on a set of designs and quidelines created by [AdHoc](https://homework.adhoc.team/).
 
-1. Does the `autocomplete` attribute on inputs help or hinder accessibility?
+✅ Goal: Achieve 100 in a Google Lighthouse accessibility scan.
+<br>✅ Scope: Modern browsers only, with no need for legacy support, UI or JS libraries, frameworks, or mixin libraries.
+<br>✅ Specifications: The form doesn’t need to submit; no animations or task runners are required. 
 
-2. The UI snapshot does not show the alert generated on submission if a field has the `required` attribute. 
-- Is `required` off, or is the alert just hidden?
-Note: the `required` has the benefit of bringing focus to the first input that has an error, but I was not
-successful at hiding the error tooltip. 😡
+For a detailed overview and access to the starter files, visit the [Accessibility Engineer Assignment](https://homework.adhoc.team/accessibility_engineer/) on AdHoc’s official website.
 
-3. Same question as above for input type `email`. No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (when @ is missing), so I did not use JS to add an error message. 
+Live site of [my Accessibility Engineer page](https://a11y-engineer.netlify.app/).
 
-4. I bundled all error messages under one `aria-live` element. 
-- Should the focus be directed to the first input that has an error?
+## Why I Love This Project!
+I believe in a web where everyone has a place. I welcome every challenge that allows me to improve my knowledge of accessibility features. This project has been an opportunity to test my skills and it has put me in a position to research and reach out to accessibility experts on best practices.
 
-5. Should form validation include checking whether the full name field contains two words?
+![Screen shot of the accessibility engineer homework. It features a navbar, hero section, and a form with three inputs and a submit buttom](https://github.com/CorinaMurg/a11y-engineer-homework/assets/115652409/17d1484c-ebc5-42ed-994c-bf674f5a62fb)
 
-6. For in-focus states, it was not clear from the UI snapshot whether `focus-visible` is preferred to `focus` so I used the latter.
+## My Approach 
+**Semantic HTML**: I used tags like `nav`, `header`, `main`, and `form` to help assistive technologies understand the structure of the page, enhancing the user experience for those relying on screen readers or other aids.
 
-7. Would a `skip link` make sense here?
+**ARIA Attributes**: I used several ARIA attributes (like aria-live, aria-label, and aria-hidden) to make the page more understandable to assistive tools.
 
-8. I was confused by this requirement:
-    Spacing values
-    - 6px
-    - 12px
-    - 24px
-    - 48px
-- I assumed they refered to `letter-spacing`, but I was not how to use such large values.
-Note: I added my own `letter-spacing` values.
+**Skip to Content**: This feature was not part of the provided design. I felt it's important to include it because it enhances keyboard navigation by allowing users to skip repetitive sections and dive straight into the main content.
 
+**Focus Styles**: Elements like links and buttons have clear focus styles, which are essential for keyboard-only users.
 
+**Error Handling in Form**: The form has clear error messages, with live regions ensuring that assistive technologies pick up error messages as they appear.
 
+**Responsive Design**: I used a mobile-first approach, with media queries optimizing the layout for larger screens. 
 
-## PROJECT REQUIREMENTS FROM AD HOC
-https://homework.adhoc.team/accessibility_engineer/
+## My decisions regarding certain a11y and UI features
+**Use input type `email`**:
+No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (when @ is missing), so I did not use JS to add an error message. Plus, on mobile devices it has the added benefit of bringing up the appropriate keyboard.
 
-## Instructions & Guidelines
+**Display of error messages**:
+I bundled all error messages under one `aria-live` element. 
 
-Please build a responsive HTML page from the attached large and small screen designs.
+**Check whether the full-name field contains two words**:
+Given my personal experience with forms, I made the decision not to, even though I think, theoretically, it would be a good idea to have it.
 
-- Form does not have to submit anywhere
-- Animations are not required
-- Submissions should score a 100 in a Google lighthouse accessibility scan
-- Please build for modern browsers, don't worry about polyfills and legacy support
-- Task runners are not required, but use if you’d like
-- No UI libraries
-- No JS libraries or frameworks
-- No mixin libraries
-- Please provide any needed build instructions
-
-## Information
-
-Below, you will find the technical information needed to complete the assignment. You do not have to use the specific pixels listed, translating to a relative unit is fine. Please add your solution into the `./src` directory.
-
-The error depicted in the design is meant to communicate a state, so this should be built as validation on each form field.
-
-### What's in the box?
-
-Feel free to update and change these files as your solution dictates.
-
-- src/index.html: A blank HTML file for you to add your solution
-- src/css/style.css: A blank CSS file to use
-- src/js/script.js: A blank JS file to use
-- src/images/image.png: The image required for the design
-- designs/large-screen.png: The large screen version of the design
-- designs/small-screen.png: The small screen version of the design
-
-### Colors (already added in styles.css)
-
-- \#FFFFFF
-- \#FFECB5
-- \#0E7757
-- \#CC0000
-- \#212121
-
-### Spacing values
-
-- 6px
-- 12px
-- 24px
-- 48px
-
-### Font size
-
-- Headings: 38px
-- Copy: 16px
-
-### Line height
-
-- Headings: 40px
-- Copy: 24px
-
-### Fonts (prepopulated in the HTML)
-
-[Roboto](https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap) (400, 700)
-
-### URLs (for the page navigation)
-
-- https://adhocteam.us/
-- https://adhocteam.us/about/
-- https://adhocteam.us/contact/
-
-
-
-
+**focus vs. focus-visible**:
+For in-focus states, it was not clear from the UI snapshot which of the two is required. I decided to use `focus` since it has a more general use.
