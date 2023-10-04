@@ -31,13 +31,13 @@ I believe in a web where everyone has a place. I welcome every challenge that al
 
 ## My decisions regarding certain a11y and UI features
 **Use input type `email`**:
-No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (when @ is missing), so I did not use JS to add an error message. Plus, on mobile devices it brings up the appropriate keyboard.
+No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (when @ is missing), so I did not use JS to add an error message. Plus, on mobile devices it has the added benefit of bringing up the appropriate keyboard.
 
 **Display of error messages**:
 I bundled all error messages under one `aria-live` element. 
 
-**Check whether the full name field contains two words**:
-I made the decision not to, even though I assume it would not 
+**Check whether the full-name field contains two words**:
+Given my personal experience with forms, I made the decision not to, even though I think, theoretically, it would be a good idea to have it.
 
 **focus vs. focus-visible**:
-For in-focus states, it was not clear from the UI snapshot whether which of the two is required. I decided to use `focus` since it has a more general use.
+For in-focus states, it was not clear from the UI snapshot which of the two is required. I decided to use `focus` since it has a more general use.
