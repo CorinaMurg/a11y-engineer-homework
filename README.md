@@ -41,3 +41,9 @@ Given my personal experience with forms, I made the decision not to, even though
 
 **focus vs. focus-visible**:
 For in-focus states, it was not clear from the UI snapshot which of the two is required. I decided to use `focus` since it has a more general use.
+
+## Important aspect to address
+**Managing focus when there are error meesages**
+<br>Right now, the screen reader announces the number of error messages, then reads the list of errors. A keyboard user has to then navigate back from the button to a given input field. 
+
+My question: Should the focus be send to the first input with an error?
