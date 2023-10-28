@@ -32,18 +32,18 @@ Question: Are there keyboard shortcuts that allow user to skip to the main conte
 **Responsive Design**: I used a mobile-first approach, with media queries optimizing the layout for larger screens. 
 
 ## Important aspect to address & Questions
-**focus vs. focus-visible**:
-For in-focus states, it was not clear from the UI snapshot which of the two is required. I decided to use `focus` since it has a more general use.
+**1. focus vs. focus-visible**:
+<br>For in-focus states, it was not clear from the UI snapshot which of the two is required. I decided to use `focus` since it has a more general use.
 
-**Display of error messages**:
-**Managing focus when there are error meesages**
+**2. Display of error messages + Managing focus when there are error meesages**
 <br> I bundled all error messages under one `aria-live` element. Right now, the screen reader announces the number of error messages, then reads the list of errors. A keyboard user has to then navigate back from the button to a given input field. 
 
 Question: Should the focus be sent to the first input with an error?
 
-**Use input type `email`**
-<br>**Checking for patterns in entered data**
+**3. Use input type `email` OR Check for patterns in all entered data**
+<br>No hint from the snapshot, so I added the type to the `email` input. It does a good job (though not perfect!) reminding users if the input is invalid, so I did not use JS to add an error message. Plus, on mobile devices it has the added benefit of bringing up the appropriate keyboard. 
 
-No hint from the snapshot, so I assumed it was expected. It does a good job (though not perfect!) reminding users if the input is invalid, so I did not use JS to add an error message. Plus, on mobile devices it has the added benefit of bringing up the appropriate keyboard. 
-Question: Should I use JavaScript to validate inputs based on certain patterns?
-Example: the “required” attribute on email ensures that users are reminded about a missing @ or text after @, but it does not check for missing domain extensions. The Full Name and Message inputs have no validation other that checking for an empty field.
+Caveats: the type email ensures that users are reminded about a missing @ or text after @, but it does not check for missing domain extensions. Also, the Full Name and Message inputs have no validation other that checking for an empty field.
+
+Question: Should I use JavaScript to validate all inputs based on certain patterns?
+
