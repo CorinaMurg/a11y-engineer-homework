@@ -21,7 +21,9 @@ I believe in a web where everyone has a place. I welcome every challenge that al
 
 **ARIA Attributes**: I used several ARIA attributes (like aria-live, aria-label, and aria-hidden) to make the page more understandable to assistive tools.
 
-**Skip to Content**: This feature was not part of the provided design. I felt it's important to include it because it enhances keyboard navigation by allowing users to skip repetitive sections and dive straight into the main content.
+**Skip to Content**: This feature was not part of the provided design. I learned it’s supposed to  enhance keyboard navigation by allowing users to skip repetitive sections and dive straight into the main content.
+
+Question: Are there keyboard shortcuts that allow user to skip to the main content without this link?
 
 **Focus Styles**: Elements like links and buttons have clear focus styles, which are essential for keyboard-only users.
 
@@ -29,21 +31,19 @@ I believe in a web where everyone has a place. I welcome every challenge that al
 
 **Responsive Design**: I used a mobile-first approach, with media queries optimizing the layout for larger screens. 
 
-## My decisions regarding certain a11y and UI features
-**Use input type `email`**:
-No hint from the snapshot, so I assumed it was expected. It does a good job reminding users if the input is invalid (when @ is missing), so I did not use JS to add an error message. Plus, on mobile devices it has the added benefit of bringing up the appropriate keyboard.
-
-**Display of error messages**:
-I bundled all error messages under one `aria-live` element. 
-
-**Check whether the full-name field contains two words**:
-Given my personal experience with forms, I made the decision not to, even though I think, theoretically, it would be a good idea to have it.
-
+## Important aspect to address & Questions
 **focus vs. focus-visible**:
 For in-focus states, it was not clear from the UI snapshot which of the two is required. I decided to use `focus` since it has a more general use.
 
-## Important aspect to address
+**Display of error messages**:
 **Managing focus when there are error meesages**
-<br>Right now, the screen reader announces the number of error messages, then reads the list of errors. A keyboard user has to then navigate back from the button to a given input field. 
+<br> I bundled all error messages under one `aria-live` element. Right now, the screen reader announces the number of error messages, then reads the list of errors. A keyboard user has to then navigate back from the button to a given input field. 
 
-My question: Should the focus be send to the first input with an error?
+Question: Should the focus be sent to the first input with an error?
+
+**Use input type `email`**
+<br>**Checking for patterns in entered data**
+
+No hint from the snapshot, so I assumed it was expected. It does a good job (though not perfect!) reminding users if the input is invalid, so I did not use JS to add an error message. Plus, on mobile devices it has the added benefit of bringing up the appropriate keyboard. 
+Question: Should I use JavaScript to validate inputs based on certain patterns?
+Example: the “required” attribute on email ensures that users are reminded about a missing @ or text after @, but it does not check for missing domain extensions. The Full Name and Message inputs have no validation other that checking for an empty field.
