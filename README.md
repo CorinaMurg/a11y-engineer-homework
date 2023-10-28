@@ -32,10 +32,10 @@ Question: Are there keyboard shortcuts that allow user to skip to the main conte
 **Responsive Design**: I used a mobile-first approach, with media queries optimizing the layout for larger screens. 
 
 ## Important aspect to address & Questions
-**1. focus vs. focus-visible**:
+**1. `focus` vs. `focus-visible`**:
 <br>For in-focus states, it was not clear from the UI snapshot which of the two is required. I decided to use `focus` since it has a more general use.
 
-**2. Display of error messages + Managing focus when there are error meesages**
+**2. Handle error messages + Manage focus when there are error meesages**
 <br> I bundled all error messages under one `aria-live` element. Right now, the screen reader announces the number of error messages, then reads the list of errors. A keyboard user has to then navigate back from the button to a given input field. 
 
 Question: Should the focus be sent to the first input with an error?
